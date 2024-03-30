@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn {
+        @apply inline-block text-sm py-3 px-8 capitalize text-center cursor-pointer rounded-md ease-linear duration-200;
+    }
+
+    .btn-primary {
+        @apply text-zinc-100 bg-red-800 hover:opacity-75;
+    }
+}
+
+@layer base
+{
+    html {
+        @apply scroll-smooth;
+    }
+
+    body
+    {
+        @apply text-neutral-900 bg-zinc-100 tracking-wider font-dmsans dark:bg-zinc-900 dark:text-zinc-100;
+    }
+
+    section {
+        @apply pt-16 pb-4 md:pt-20;
+    }
+
+    footer {
+        @apply dark:bg-zinc-950;
+    }
+
+    header {
+        @apply dark:bg-zinc-950;
+    }
+    .menu_mode {
+        @apply dark:bg-zinc-950;
+    }
+}
+
+@layer utilities {
+    .card__title {
+        @apply text-4xl font-oswald font-bold uppercase lg:text-6xl text-zinc-100;
+    }
+    .card__title {
+        @apply text-xl;
+    }
+
+    .section__title {
+        @apply text-3xl font-oswald font-bold uppercase lg:text-6xl;
+    }
+
+    .paragraph {
+        @apply text-xs leading-5;
+    }
+
+    .cardd__title {
+        @apply text-4xl font-oswald font-bold uppercase lg:text-6xl;
+    }
+    .cardd__title {
+        @apply text-xl;
+    }
+}
+
+.tabs_wrap ul li:hover,
+.tabs_wrap ul li.active {
+    @apply bg-red-800 text-zinc-100;
+}
